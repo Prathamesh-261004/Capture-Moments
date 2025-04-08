@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f5f5dc;
+      font-family: 'Playfair Display', serif;
+    }
+
+    h2, h5 {
+      text-align: center;
+    }
+
+    .section-title {
+      margin-top: 40px;
+    }
+
+    .card img {
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .mission-section, .cta-section {
+      background-color: #fdfaf0;
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    .owner-section h5 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #343a40;
+    }
+
+    .owner-card {
+      background-color: #fdfaf0;
+      border: none;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .owner-img-wrapper {
+      max-width: 100%;
+      max-height: 400px;
+      overflow: hidden;
+      border-bottom: 1px solid #eaeaea;
+      width: 100%;
+    }
+
+    .owner-img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+
+    .owner-content {
+      padding: 30px;
+    }
+
+    .owner-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #2c3e50;
+    }
+
+    .owner-text {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    @media (min-width: 768px) {
+      .owner-card {
+        flex-direction: row;
+      }
+
+      .owner-img-wrapper {
+        width: 40%;
+        max-height: none;
+        border-bottom: none;
+        border-right: 1px solid #eaeaea;
+      }
+
+      .owner-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .owner-content {
+        width: 60%;
+      }
+    }
+
+    /* Floating back button */
+    .back-button {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #2c3e50;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: background 0.3s ease;
+    }
+
+    .back-button:hover {
+      background: #1a242f;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container py-5">
+
+  <!-- Title -->
+  <h2>About Us</h2>
+  <p class="text-center mb-5">Capturing Stories Through Our Lens Since 2015</p>
+
+  <!-- 1. Mission Statement -->
+  <div class="mission-section mb-5">
+    <h5>Our Mission</h5>
+    <p class="text-center">At FrameFocus Photography, we aim to freeze moments in time with creativity, authenticity, and precision. Our work is not just about taking pictures – it's about capturing emotions, stories, and timeless memories for every client.</p>
+  </div>
+
+  <!-- 2. Our Team -->
+  <div class="container owner-section">
+    <h5>Meet the Owner</h5>
+    <div class="owner-card">
+      <div class="owner-img-wrapper">
+        <img src="j.png" alt="Prathamesh Rane" class="owner-img">
+      </div>
+      <div class="owner-content">
+        <h5 class="owner-title">Prathamesh Rane</h5>
+        <p class="owner-text">
+          Founder & Lead Photographer at FrameFocus Photography, Prathamesh Rane is a visionary with an eye for detail and a heart that beats for storytelling. With over a decade of experience in professional photography, he has transformed countless moments into timeless masterpieces. His expertise lies in luxury wedding shoots, editorial fashion campaigns, cinematic pre-wedding stories, and destination events across the globe.
+          <br><br>
+          A perfectionist at heart, Prathamesh combines technical mastery with emotional depth — ensuring every frame is not just seen, but felt. He has trained under renowned global photographers, and his work has been featured in leading publications like <strong>Vogue India</strong>, <strong>National Geographic Explorer</strong>, and <strong>Better Photography</strong>. Beyond the lens, he is also a mentor, regularly conducting masterclasses to nurture aspiring photographers.
+          <br><br>
+          Whether he's capturing the soft smiles of a bride, the chaos of a bustling cityscape, or the serenity of nature — Prathamesh believes every photo should speak volumes, even in silence.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Company Timeline -->
+  <h5 class="section-title">Our Journey</h5>
+  <ul class="list-group mb-5">
+    <li class="list-group-item">2015 - FrameFocus founded with a dream to redefine visual storytelling.</li>
+    <li class="list-group-item">2016 - First international wedding shoot in Bali.</li>
+    <li class="list-group-item">2018 - Opened a second studio in Mumbai.</li>
+    <li class="list-group-item">2020 - Introduced drone and 4K video services.</li>
+    <li class="list-group-item">2022 - Crossed 2000+ clients and launched an online booking portal.</li>
+  </ul>
+
+  <!-- 4. Core Values -->
+  <h5 class="section-title">Our Core Values</h5>
+  <div class="row text-center mb-5">
+    <div class="col-md-4">
+      <div class="alert alert-success">🎨 Creativity</div>
+    </div>
+    <div class="col-md-4">
+      <div class="alert alert-info">🤝 Integrity</div>
+    </div>
+    <div class="col-md-4">
+      <div class="alert alert-warning">📷 Passion for Photography</div>
+    </div>
+  </div>
+
+  <!-- 5. Achievements -->
+  <h5 class="section-title">Milestones & Achievements</h5>
+  <div class="row mb-5">
+    <div class="col-md-6">
+      <ul>
+        <li>🏆 Best Wedding Photographer Award – 2021</li>
+        <li>📸 Featured in Vogue India, NatGeo Explorer</li>
+        <li>🎓 Conducted 50+ workshops for budding photographers</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <ul>
+        <li>🌍 Projects in 10+ countries</li>
+        <li>💬 2000+ client testimonials with 5-star ratings</li>
+        <li>🖼️ Portfolio displayed in art galleries</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 6. Testimonials -->
+  <h5 class="section-title">Client Testimonials</h5>
+  <div class="mb-5">
+    <div class="blockquote text-center">
+      <p>“They didn't just take photos — they told our story. Every image is a memory we cherish.”</p>
+      <footer class="blockquote-footer">– Priya & Karan (Wedding Clients)</footer>
+    </div>
+    <div class="blockquote text-center">
+      <p>“Professional, passionate, and truly talented. A dream team to work with!”</p>
+      <footer class="blockquote-footer">– Ankit Shah (Travel Blogger)</footer>
+    </div>
+  </div>
+
+  <!-- 7. Client Satisfaction Progress -->
+  <h5 class="section-title">Client Satisfaction</h5>
+  <div class="progress mb-5">
+    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 98%;">98% Satisfaction Rate</div>
+  </div>
+
+  <!-- 8. FAQs - Accordion -->
+  <h5 class="section-title">Frequently Asked Questions</h5>
+  <div class="accordion mb-5" id="faqAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+          Do you travel outside India for photoshoots?
+        </button>
+      </h2>
+      <div id="faq1" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          Yes! We frequently travel for destination weddings and international assignments.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+          How long does it take to get the final photos?
+        </button>
+      </h2>
+      <div id="faq2" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          Final delivery is within 10–14 business days. Urgent delivery options are available on request.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9. Call to Action -->
+  <div class="cta-section text-center">
+    <h5>Ready to make your moments unforgettable?</h5>
+    <p>Let’s collaborate and create something beautiful together.</p>
+    <a href="contact.html" class="btn btn-dark">Contact Us Now</a>
+  </div>
+
+</div>
+
+<!-- Floating Back Button -->
+<a href="index.html" class="back-button">&#8592;</a>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

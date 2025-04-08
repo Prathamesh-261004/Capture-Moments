@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Packages - FrameFocus Photography</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5dc;
+      font-family: 'Poppins', sans-serif;
+      background-image: url('https://images.pexels.com/photos/2306291/pexels-photo-2306291.jpeg?auto=compress&cs=tinysrgb&w=1600');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      backdrop-filter: blur(5px);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 70px 20px;
+    }
+
+    h2.title {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      color: #464934cd;
+      margin-bottom: 60px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+
+    .packages {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      animation: fadeIn 1s ease;
+    }
+
+    .package-card {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 25px;
+      color: #464934cd;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(255,255,255,0.3);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .package-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .package-title {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      text-align: center;
+      color: #464934cd;
+    }
+
+    .package-price {
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-align: center;
+      color: #ffd700;
+      margin-bottom: 15px;
+    }
+
+    .package-features {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .package-features li {
+      margin: 10px 0;
+      font-size: 0.95rem;
+    }
+
+    .btn-book {
+      display: block;
+      text-align: center;
+      padding: 10px 0;
+      border: none;
+      background: #464934cd;
+      color: #2c3e50;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn-book:hover {
+      background: #ffd700;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 30px 15px;
+      }
+
+      h2.title {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="title">Our Photography Packages</h2>
+    <div class="packages">
+      
+      <div class="package-card">
+        <h3 class="package-title">Starter Portrait</h3>
+        <p class="package-price">₹2,000</p>
+        <ul class="package-features">
+          <li>30 mins session</li>
+          <li>5 HD edited photos</li>
+          <li>1 location</li>
+          <li>Online delivery</li>
+        </ul>
+        <a href="#" class="btn-book">Book Now</a>
+      </div>
+
+      <div class="package-card">
+        <h3 class="package-title">Couples Shoot</h3>
+        <p class="package-price">₹5,000</p>
+        <ul class="package-features">
+          <li>1.5 hour session</li>
+          <li>15 photos</li>
+          <li>2 locations</li>
+          <li>Free prints (5)</li>
+        </ul>
+        <a href="#" class="btn-book">Book Now</a>
+      </div>
+      <a href="index.html" 
+      style="position:fixed;bottom:20px;left:20px;width:50px;height:50px;border-radius:50%;
+             background:#2c3e50;color:#fff;display:flex;align-items:center;justify-content:center;
+             font-size:24px;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.3);
+             transition:background 0.3s ease;">
+     &#8592;
+   </a>
+   
+      <div class="package-card">
+        <h3 class="package-title">Event Essentials</h3>
+        <p class="package-price">₹9,500</p>
+        <ul class="package-features">
+          <li>3 hrs coverage</li>
+          <li>100+ images</li>
+          <li>Editing included</li>
+          <li>Private gallery</li>
+        </ul>
+        <a href="#" class="btn-book">Book Now</a>
+      </div>
+
+      <div class="package-card">
+        <h3 class="package-title">Wedding Deluxe</h3>
+        <p class="package-price">₹30,000</p>
+        <ul class="package-features">
+          <li>Full day shoot</li>
+          <li>Drone + Album</li>
+          <li>300+ photos</li>
+          <li>HD Video + Teaser</li>
+        </ul>
+        <a href="#" class="btn-book">Book Now</a>
+      </div>
+
+      <div class="package-card">
+        <h3 class="package-title">Cinematic Promo</h3>
+        <p class="package-price">₹12,000</p>
+        <ul class="package-features">
+          <li>Video + Photos</li>
+          <li>1-2 mins reel</li>
+          <li>Voice overlay</li>
+          <li>Drone included</li>
+        </ul>
+        <a href="#" class="btn-book">Book Now</a>
+      </div>
+
+      <div class="package-card">
+        <h3 class="package-title">Product & Branding</h3>
+        <p class="package-price">₹4,000</p>
+        <ul class="package-features">
+          <li>15 product shots</li>
+          <li>Transparent BG</li>
+          <li>Social media kit</li>
+          <li>Fast delivery</li>
+        </ul>
+        <a href="#" class="btn-book">Book Now</a>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

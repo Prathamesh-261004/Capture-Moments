@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Capture Moments</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #f5f5dc; font-family: 'Playfair Display', serif;">
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Capture Moments</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="container mt-5 text-center">
+  <img src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg" class="img-fluid rounded shadow-lg mb-4" alt="Hero" style="max-height: 400px; width: 100%; object-fit: cover;">
+  <h1 class="display-4">Capture Moments</h1>
+  <p class="lead">Your story through our lens</p>
+  <a href="gallery.html" class="btn btn-dark mt-3">Explore Our Work</a>
+</header>
+
+<!-- Services -->
+<section class="container mt-5">
+  <h2 class="text-center mb-4">Our Specialties</h2>
+  <div class="row text-center g-4">
+    <div class="col-md-3 col-sm-6">
+      <div class="card h-100 shadow-sm">
+        <img src="https://images.squarespace-cdn.com/content/v1/5f071d942a970742ef9c558d/1629319875603-TWSERRZ1WUKENF5LDEDD/pexel-wedding-dress-3014856.jpg" class="card-img-top img-hover" alt="Weddings">
+        <div class="card-body">
+          <h5 class="card-title">Weddings</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="card h-100 shadow-sm">
+        <img src="https://images.pexels.com/photos/3186654/pexels-photo-3186654.jpeg" class="card-img-top img-hover" alt="Events">
+        <div class="card-body">
+          <h5 class="card-title">Events</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="card h-100 shadow-sm">
+        <img src="https://images.pexels.com/photos/212372/pexels-photo-212372.jpeg" class="card-img-top img-hover" alt="Portraits">
+        <div class="card-body">
+          <h5 class="card-title">Portraits</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="card h-100 shadow-sm">
+        <img src="https://images.pexels.com/photos/3062541/pexels-photo-3062541.jpeg" class="card-img-top img-hover" alt="Products">
+        <div class="card-body">
+          <h5 class="card-title">Products</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Preview -->
+<section class="container mt-5">
+  <h2 class="text-center mb-4">Portfolio Preview</h2>
+  <div class="row g-3">
+    <!-- 8 Gallery Images -->
+    <div class="col-md-3 col-6">
+        <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" 
+             style="width:100%; height:250px; object-fit:cover; border-radius:8px; transition: transform 0.3s;" 
+             onmouseover="this.style.transform='scale(1.05)'" 
+             onmouseout="this.style.transform='scale(1)'">
+      </div>
+      <body style="margin:0;background:#f0f0f0;height:100vh;">
+
+        <div style="position:fixed;bottom:20px;right:20px;width:80px;height:80px;border-radius:50%;background:#fff;box-shadow:0 4px 12px rgba(0,0,0,0.2);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:sans-serif;">
+          <span style="font-size:0.7rem;color:#555;">Visitors</span>
+          <span id="visitCount" style="font-size:1.2rem;color:#27ae60;font-weight:bold;">0</span>
+        </div>
+      
+        <script>
+          let visitCount = localStorage.getItem('visitCount') || 0;
+          visitCount++;
+          localStorage.setItem('visitCount', visitCount);
+          document.getElementById('visitCount').innerText = visitCount;
+        </script>
+      <div class="col-md-3 col-6">
+        <img src="https://images.pexels.com/photos/3748221/pexels-photo-3748221.jpeg" 
+             style="width:100%; height:250px; object-fit:cover; border-radius:8px; transition: transform 0.3s;" 
+             onmouseover="this.style.transform='scale(1.05)'" 
+             onmouseout="this.style.transform='scale(1)'">
+      </div>
+  
+      <div class="col-md-3 col-6">
+        <img src="https://images.pexels.com/photos/313707/pexels-photo-313707.jpeg" 
+             style="width:100%; height:250px; object-fit:cover; border-radius:8px; transition: transform 0.3s;" 
+             onmouseover="this.style.transform='scale(1.05)'" 
+             onmouseout="this.style.transform='scale(1)'">
+      </div>
+  
+      <div class="col-md-3 col-6">
+        <img src="https://images.pexels.com/photos/1766604/pexels-photo-1766604.jpeg" 
+             style="width:100%; height:250px; object-fit:cover; border-radius:8px; transition: transform 0.3s;" 
+             onmouseover="this.style.transform='scale(1.05)'" 
+             onmouseout="this.style.transform='scale(1)'">
+      </div>
+  
+      <div class="col-md-3 col-6">
+        <img src="https://images.pexels.com/photos/1179225/pexels-photo-1179225.jpeg?auto=compress&cs=tinysrgb&w=600" 
+             style="width:100%; height:250px; object-fit:cover; border-radius:8px; transition: transform 0.3s;" 
+             onmouseover="this.style.transform='scale(1.05)'" 
+             onmouseout="this.style.transform='scale(1)'">
+      </div>
+  
+      <div class="col-md-3 col-6">
+        <img src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg" 
+             style="width:100%; height:250px; object-fit:cover; border-radius:8px; transition: transform 0.3s;" 
+             onmouseover="this.style.transform='scale(1.05)'" 
+             onmouseout="this.style.transform='scale(1)'">
+      </div>
+  
+      <div class="col-md-3 col-6">
+        <img src="https://images.pexels.com/photos/5083810/pexels-photo-5083810.jpeg" 
+             style="width:100%; height:250px; object-fit:cover; border-radius:8px; transition: transform 0.3s;" 
+             onmouseover="this.style.transform='scale(1.05)'" 
+             onmouseout="this.style.transform='scale(1)'">
+      </div>
+  
+      <div class="col-md-3 col-6">
+        <img src="https://images.pexels.com/photos/2236703/pexels-photo-2236703.jpeg" 
+             style="width:100%; height:250px; object-fit:cover; border-radius:8px; transition: transform 0.3s;" 
+             onmouseover="this.style.transform='scale(1.05)'" 
+             onmouseout="this.style.transform='scale(1)'">
+      </div>
+  
+      <div class="col-md-3 col-6">
+        <img src="https://images.pexels.com/photos/1955134/pexels-photo-1955134.jpeg?auto=compress&cs=tinysrgb&w=600" 
+             style="width:100%; height:250px; object-fit:cover; border-radius:8px; transition: transform 0.3s;" 
+             onmouseover="this.style.transform='scale(1.05)'" 
+             onmouseout="this.style.transform='scale(1)'">
+      </div>
+  
+      <div class="col-md-3 col-6">
+        <img src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?auto=compress&cs=tinysrgb&w=600" 
+             style="width:100%; height:250px; object-fit:cover; border-radius:8px; transition: transform 0.3s;" 
+             onmouseover="this.style.transform='scale(1.05)'" 
+             onmouseout="this.style.transform='scale(1)'">
+      </div>
+  
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="container mt-5">
+  <h2 class="text-center mb-4">Happy Clients</h2>
+  <div class="row text-center">
+    <div class="col-md-6">
+      <blockquote class="blockquote">
+        <p>"Best photos ever! Every memory was captured perfectly."</p>
+        <footer class="blockquote-footer">Anjali Mehra</footer>
+      </blockquote>
+    </div>
+    <div class="col-md-6">
+      <blockquote class="blockquote">
+        <p>"The team was so friendly and professional. Loved it!"</p>
+        <footer class="blockquote-footer">Vikram Raj</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- Booking CTA -->
+<section class="container text-center mt-5">
+  <h3>Ready to Capture Your Story?</h3>
+  <a href="contact.html" class="btn btn-outline-dark mt-2">Check Availability</a>
+</section>
+
+<!-- Newsletter -->
+<section class="container mt-5">
+  <h4 class="text-center mb-3">Stay Updated</h4>
+  <form class="row justify-content-center">
+    <div class="col-md-6">
+      <input type="email" class="form-control" placeholder="Your email address">
+    </div>
+    <div class="col-md-2">
+      <button type="submit" class="btn btn-dark w-100">Subscribe</button>
+    </div>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="text-center mt-5 p-4 bg-dark text-white">
+  &copy; 2024 Capture Moments. All rights reserved.
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

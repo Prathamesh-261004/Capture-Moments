@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - FrameFocus Photography</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f5f5dc;
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .gallery-title {
+      text-align: center;
+      font-size: 2.8rem;
+      margin-bottom: 50px;
+      color: #2c3e50;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: #fff;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+      display: block;
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 10px 15px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      font-size: 1rem;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .card:hover .overlay {
+      opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-title {
+        font-size: 2.2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery-title {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container gallery-section">
+    <h2 class="gallery-title">Gallery</h2>
+    <div class="gallery-grid">
+
+      <!-- Image Cards -->
+      <div class="card">
+        <img src="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Photo 1" loading="lazy">
+        <div class="overlay">Nature Landscape</div>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/313707/pexels-photo-313707.jpeg" alt="Photo 2" loading="lazy">
+        <div class="overlay">Mountain View</div>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/1704120/pexels-photo-1704120.jpeg" alt="Photo 3" loading="lazy">
+        <div class="overlay">Golden Hour</div>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/3771834/pexels-photo-3771834.jpeg" alt="Photo 4" loading="lazy">
+        <div class="overlay">Urban Street</div>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/1187073/pexels-photo-1187073.jpeg" alt="Photo 5" loading="lazy">
+        <div class="overlay">Wilderness Path</div>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg" alt="Photo 6" loading="lazy">
+        <div class="overlay">Road to Hills</div>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/1729948/pexels-photo-1729948.jpeg" alt="Photo 7" loading="lazy">
+        <div class="overlay">Sunset View</div>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/1987301/pexels-photo-1987301.jpeg" alt="Photo 8" loading="lazy">
+        <div class="overlay">Forest Hike</div>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg" alt="Photo 9" loading="lazy">
+        <div class="overlay">Beach Vibes</div>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/1121796/pexels-photo-1121796.jpeg" alt="Photo 10" loading="lazy">
+        <div class="overlay">Blue Horizon</div>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/2987769/pexels-photo-2987769.jpeg" alt="Photo 11" loading="lazy">
+        <div class="overlay">Sun Through Trees</div>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/2121666/pexels-photo-2121666.jpeg" alt="Photo 12" loading="lazy">
+        <div class="overlay">Urban Reflection</div>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/1916810/pexels-photo-1916810.jpeg" alt="Photo 13" loading="lazy">
+        <div class="overlay">Lake View</div>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" alt="Photo 14" loading="lazy">
+        <div class="overlay">Winding Road</div>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/1809644/pexels-photo-1809644.jpeg" alt="Photo 15" loading="lazy">
+        <div class="overlay">Morning Mist</div>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/3488259/pexels-photo-3488259.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Photo 16" loading="lazy">
+        <div class="overlay">Stone Path</div>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg" alt="Photo 17" loading="lazy">
+        <div class="overlay">Snowy Peak</div>
+      </div>
+
+    </div>
+  </div>
+  <a href="index.html" 
+  style="position:fixed;bottom:20px;left:20px;width:50px;height:50px;border-radius:50%;
+         background:#2c3e50;color:#fff;display:flex;align-items:center;justify-content:center;
+         font-size:24px;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.3);
+         transition:background 0.3s ease;">
+ &#8592;
+</a>
+
+</body>
+</html>
